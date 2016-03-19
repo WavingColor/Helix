@@ -15,6 +15,11 @@
 		04EC473C1C9CF76700934688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EC473A1C9CF76700934688 /* LaunchScreen.storyboard */; };
 		04EC47471C9CF76700934688 /* HelixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC47461C9CF76700934688 /* HelixTests.m */; };
 		04EC47521C9CF76700934688 /* HelixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC47511C9CF76700934688 /* HelixUITests.m */; };
+		04EC47611C9CF7BA00934688 /* HelixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC47601C9CF7BA00934688 /* HelixViewController.m */; };
+		04EC47641C9CF7E300934688 /* UIBezierPath+mathLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC47631C9CF7E300934688 /* UIBezierPath+mathLines.m */; };
+		04EC47671C9CF80D00934688 /* ArchimedeanSpralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC47661C9CF80D00934688 /* ArchimedeanSpralViewController.m */; };
+		04EC476A1C9CFA7000934688 /* HelixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC47691C9CFA7000934688 /* HelixView.m */; };
+		04EC476D1C9CFF0400934688 /* ArchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC476C1C9CFF0400934688 /* ArchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		04EC474D1C9CF76700934688 /* HelixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EC47511C9CF76700934688 /* HelixUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelixUITests.m; sourceTree = "<group>"; };
 		04EC47531C9CF76700934688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EC475F1C9CF7BA00934688 /* HelixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelixViewController.h; sourceTree = "<group>"; };
+		04EC47601C9CF7BA00934688 /* HelixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelixViewController.m; sourceTree = "<group>"; };
+		04EC47621C9CF7E300934688 /* UIBezierPath+mathLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+mathLines.h"; sourceTree = "<group>"; };
+		04EC47631C9CF7E300934688 /* UIBezierPath+mathLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+mathLines.m"; sourceTree = "<group>"; };
+		04EC47651C9CF80D00934688 /* ArchimedeanSpralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimedeanSpralViewController.h; sourceTree = "<group>"; };
+		04EC47661C9CF80D00934688 /* ArchimedeanSpralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimedeanSpralViewController.m; sourceTree = "<group>"; };
+		04EC47681C9CFA7000934688 /* HelixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelixView.h; sourceTree = "<group>"; };
+		04EC47691C9CFA7000934688 /* HelixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelixView.m; sourceTree = "<group>"; };
+		04EC476B1C9CFF0400934688 /* ArchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchView.h; sourceTree = "<group>"; };
+		04EC476C1C9CFF0400934688 /* ArchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +116,11 @@
 		04EC472B1C9CF76700934688 /* Helix */ = {
 			isa = PBXGroup;
 			children = (
-				04EC472F1C9CF76700934688 /* AppDelegate.h */,
-				04EC47301C9CF76700934688 /* AppDelegate.m */,
-				04EC47321C9CF76700934688 /* ViewController.h */,
-				04EC47331C9CF76700934688 /* ViewController.m */,
-				04EC47351C9CF76700934688 /* Main.storyboard */,
-				04EC47381C9CF76700934688 /* Assets.xcassets */,
-				04EC473A1C9CF76700934688 /* LaunchScreen.storyboard */,
-				04EC473D1C9CF76700934688 /* Info.plist */,
+				04EC47701C9D14E700934688 /* Application */,
+				04EC476F1C9D14D400934688 /* Arch */,
+				04EC476E1C9D10B500934688 /* Helix */,
+				04EC47621C9CF7E300934688 /* UIBezierPath+mathLines.h */,
+				04EC47631C9CF7E300934688 /* UIBezierPath+mathLines.m */,
 				04EC472C1C9CF76700934688 /* Supporting Files */,
 			);
 			path = Helix;
@@ -138,6 +150,43 @@
 				04EC47531C9CF76700934688 /* Info.plist */,
 			);
 			path = HelixUITests;
+			sourceTree = "<group>";
+		};
+		04EC476E1C9D10B500934688 /* Helix */ = {
+			isa = PBXGroup;
+			children = (
+				04EC475F1C9CF7BA00934688 /* HelixViewController.h */,
+				04EC47601C9CF7BA00934688 /* HelixViewController.m */,
+				04EC47681C9CFA7000934688 /* HelixView.h */,
+				04EC47691C9CFA7000934688 /* HelixView.m */,
+			);
+			name = Helix;
+			sourceTree = "<group>";
+		};
+		04EC476F1C9D14D400934688 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				04EC476B1C9CFF0400934688 /* ArchView.h */,
+				04EC476C1C9CFF0400934688 /* ArchView.m */,
+				04EC47651C9CF80D00934688 /* ArchimedeanSpralViewController.h */,
+				04EC47661C9CF80D00934688 /* ArchimedeanSpralViewController.m */,
+			);
+			name = Arch;
+			sourceTree = "<group>";
+		};
+		04EC47701C9D14E700934688 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04EC47351C9CF76700934688 /* Main.storyboard */,
+				04EC47381C9CF76700934688 /* Assets.xcassets */,
+				04EC473A1C9CF76700934688 /* LaunchScreen.storyboard */,
+				04EC473D1C9CF76700934688 /* Info.plist */,
+				04EC472F1C9CF76700934688 /* AppDelegate.h */,
+				04EC47301C9CF76700934688 /* AppDelegate.m */,
+				04EC47321C9CF76700934688 /* ViewController.h */,
+				04EC47331C9CF76700934688 /* ViewController.m */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EC476A1C9CFA7000934688 /* HelixView.m in Sources */,
 				04EC47341C9CF76700934688 /* ViewController.m in Sources */,
+				04EC47611C9CF7BA00934688 /* HelixViewController.m in Sources */,
+				04EC47671C9CF80D00934688 /* ArchimedeanSpralViewController.m in Sources */,
 				04EC47311C9CF76700934688 /* AppDelegate.m in Sources */,
 				04EC472E1C9CF76700934688 /* main.m in Sources */,
+				04EC476D1C9CFF0400934688 /* ArchView.m in Sources */,
+				04EC47641C9CF7E300934688 /* UIBezierPath+mathLines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
